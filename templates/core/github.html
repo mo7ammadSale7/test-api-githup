@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>GitHub API</h1>
+
+{% for lang in data %}
+<h2>{{lang.name}}</h2>
+<p>{{lang.count}}</p>
+<hr>
+{% endfor %}
+
+
+{% endblock %}
